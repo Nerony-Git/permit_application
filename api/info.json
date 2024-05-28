@@ -1,0 +1,28 @@
+{
+    "cards": [
+        {
+            "_id": 1,
+            "name": "Sales",
+            "icon": "bi bi-cart-fill",
+            "amount": 325,
+            "percentage": 0.56,
+            "active": true
+        },
+        {
+            "_id": 2,
+            "name": "Revenue",
+            "icon": "bi bi-currency-pound",
+            "amount": 5468,
+            "percentage": 0.16,
+            "active": false
+        },
+        {
+            "_id": 3,
+            "name": "Customers",
+            "icon": "bi bi-people-fill",
+            "amount": 1534,
+            "percentage": -0.05,
+            "active": false
+        }
+    ]
+}
