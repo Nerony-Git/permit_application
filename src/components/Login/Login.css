@@ -82,6 +82,22 @@ h6 {
     translate: 0;
 }
 
+.wrapper .form-box.reg-verify {
+    position: absolute;
+    transition: none;
+    translate: 800px;
+}
+
+.wrapper.reg-verify .form-box.reg-verify {
+    transition: translate .18s ease;
+    translate: 0;
+}
+
+.wrapper.reg-verify .form-box.login {
+    transition: none;
+    translate: -400px;
+}
+
 form h1 {
     font-size: 36px;
     font-weight: bold;
@@ -169,4 +185,35 @@ form .register-link {
 
 .register-link p a:hover {
     text-decoration: underline;
+}
+
+.input-otp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-otp input {
+    width: 40px;
+    height: 65px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.input-otp h2 {
+    font-size: 32px;
+}
+
+.reg-verify h3 {
+    font-size: 22px;
+}
+
+.verifyInfo {
+    color: orange;
 }
