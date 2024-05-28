@@ -11,6 +11,9 @@ function Login() {
     const loginLink = () => {
         setAction("");
     };
+    const verifyRegisteration = () => {
+        setAction(" reg-verify");
+    };
 
   return (
     <div className={`wrapper${action}`}>
@@ -63,6 +66,7 @@ function Login() {
             </div>
             <button type="submit">Register</button>
             <div className="register-link">
+                <p><a href='#' onClick={verifyRegisteration}>Verify</a></p>
                 <p>Already have an account? <a href='#' onClick={loginLink}>Login</a></p>
             </div>
         </form>
@@ -71,10 +75,10 @@ function Login() {
       <div className="form-box reg-verify">
         <form action=''>
             <h1>Verify Email</h1>
-            <br/><br/><br/>
+            <br/>
             <h3>Please enter your OTP</h3>
-            <p><small><FaCircleInfo /> Check your email for the OTP</small></p>
-            <div className="input-box">
+            <p className='verifyInfo'><small><FaCircleInfo /> Check your email for the OTP</small></p>
+            <div className="input-otp">
                 <input type='text' maxLength='1' placeholder='0' autoFocus required /> &nbsp;
                 <input type='text' maxLength='1' placeholder='0' required /> &nbsp;
                 <input type='text' maxLength='1' placeholder='0' required /> 
@@ -86,13 +90,7 @@ function Login() {
             <br/>
             <input type='hidden' name='otp' id='otp' />
             <br/>
-            <div className="remember-me">
-                <label>
-                    <input type='checkbox' required />
-                    I agree to the terms & conditions
-                </label>
-            </div>
-            <button type="submit">Register</button>
+            <button type="submit">Verify</button>
             <div className="register-link">
                 <p>Already have an account? <a href='#' onClick={loginLink}>Login</a></p>
             </div>
